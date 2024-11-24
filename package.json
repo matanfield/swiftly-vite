@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "start": "vitepress dev docs",
+    "sync:notion": "node scripts/sync-notion.js",
+    "verify:notion": "node scripts/verify-notion.js"
+  },
+  "devDependencies": {
+    "@notionhq/client": "^2.2.15",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.1",
+    "markdown-it": "^14.0.0",
+    "notion-to-md": "^3.1.1",
+    "vitepress": "latest"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
